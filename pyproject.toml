@@ -9,7 +9,7 @@ dependencies = []
 test = [
     "pytest-homeassistant-custom-component==0.13.366",
     "rusthinq==0.2.7",  # the embedded tests run the real daemon; keep equal to manifest.json
-    "ildevice-homeassistant==0.2.3",  # the ildevice hub; keep equal to the manifest's requirement
+    "ildevice-homeassistant @ git+https://github.com/saya6k/ildevice-homeassistant@4c8959010b177b5f88729fdbdf3a5f827df30e92",  # the ildevice hub (fork, 0.2.4.dev1); keep equal to the manifest's requirement
 ]
 
 [tool.pytest.ini_options]
